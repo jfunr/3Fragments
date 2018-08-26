@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Mascota</string>
+
+    <string name="mascota1">perro feliz</string>
+
+    <string name="textmascota1">perro feliz</string>
+    <string name="textmascota2">perro peque</string>
+    <string name="textmascota3">perro orejon</string>
+    <string name="textmascota4">perro lanudo</string>
+    <string name="textmascota5">perro negro</string>
+
+    <string name="contentdescriptionactionbar">action bar with button</string>
+    <string name="contentdescription_huesoamarillo">hueso amarillo</string>
+    <string name="contentdescription_huesoblanco">hueso blanco</string>
+
+    <string name="button_lista_mascotas">editar datos</string>
+
+    <string name="rate">50</string>
+
+    <string name="menu_contacto">Contacto</string>
+    <string name="menu_acerca">Acerca de</string>
+
+    <string name="bio">Steve Jobs
+
+(Steve Paul Jobs; San Francisco, 1955 - Palo Alto, California, 2011) Informático y empresario estadounidense. Padre del primer ordenador personal y fundador de Apple Computer, probablemente la empresa más innovadora del sector, este mago de la informática fue uno de los más influyentes de la vertiginosa escalada tecnológica en que aún vive el mundo actual, contribuyendo decisivamente a la popularización de la informática. Sus ideas visionarias en el campo de los ordenadores personales, la música digital o la telefonía móvil revolucionaron los mercados y los hábitos de millones de personas durante más de tres décadas. </string>
+
+    <string name="boton_envio">Enviar Comentario</string>
+
+    <string name="nombre">Nombre</string>
+    <string name="email">E-mail</string>
+    <string name="mensaje">Mensaje</string>
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/action_bar"
+
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+
+    android:background="@color/colorPrimary"
+    android:elevation="4dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageButton
+            android:id="@+id/starButton"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="270dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/contentdescriptionactionbar"
+            android:cropToPadding="false"
+            android:onClick="irLista"
+            android:src="@drawable/icon"
+            android:visibility="visible" />
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>
+
+
+
+
+
+
+
+
+
+
+
+
