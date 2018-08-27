@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/menu"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+
     >
 
     <item
         android:id="@+id/mContacto"
         android:title="@string/menu_contacto"
-        android:orderInCategory="100"
+        android:orderInCategory="1"
         >
 
     </item>
@@ -14,7 +17,7 @@
     <item
         android:id="@+id/mAcerca"
         android:title="@string/menu_acerca"
-        android:orderInCategory="101"
+        android:orderInCategory="2"
         >
 
     </item>
