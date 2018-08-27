@@ -7,10 +7,15 @@
     android:layout_height="?actionBarSize"
 
     android:background="@color/colorPrimary"
-    android:elevation="4dp">
+    android:elevation="4dp"
+
+
+
+    >
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="330dp"
         android:layout_height="match_parent">
+
 
 
         <ImageButton

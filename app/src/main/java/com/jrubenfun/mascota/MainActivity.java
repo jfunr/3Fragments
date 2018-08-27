@@ -1,18 +1,25 @@
 package com.jrubenfun.mascota;
 
 import android.content.Intent;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.ToolbarWidgetWrapper;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.TableLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -30,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
     String[] topRates = new String[5];
     int topFoto[] = new int[5];
 
+    public Toolbar toolbar;
+    public TableLayout tableLayout;
+    public ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,7 +80,18 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        //toolbar = (Toolbar) findViewById(R.id.action_bar);
+        // Sets the Toolbar to act as the ActionBar for this Activity window.
+        // Make sure the toolbar exists in the activity and is not null
+
+
+        //    setSupportActionBar(ToolbarWidgetWrapper);
+
+
+        
     }
+
 
     public void inicializarMascotas(){
         mascotas = new ArrayList<Mascota>();
@@ -131,11 +152,11 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId())
         {
-            case R.id.mAbout:
+            case R.id.mContacto:
                 Intent intent=new Intent(this,contacto.class);
                 startActivity(intent);
                 break;
-            case R.id.mSettings:
+            case R.id.mAcerca:
                 Intent intent1=new Intent(this,acerca.class);
                 startActivity(intent1);
 
@@ -145,6 +166,7 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 
 
 }

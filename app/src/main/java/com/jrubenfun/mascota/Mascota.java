@@ -1,6 +1,5 @@
 package com.jrubenfun.mascota;
 
-
 public class Mascota {
         private int foto;
         private String nombre;

@@ -72,7 +72,4 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
             imgButton=   (ImageButton) itemView.findViewById(R.id.imgButton);
         }
     }
-
-
-
 }

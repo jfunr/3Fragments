@@ -6,7 +6,9 @@
     android:id="@+id/lista_mascotas"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListaMascotas">
+    android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar"
+    tools:context=".ListaMascotas"
+    >
 
 
     <android.support.v7.widget.RecyclerView
@@ -23,13 +25,5 @@
         android:padding="4dp"
         android:clipToPadding="false"
          />
-
-
-
-
-
-
-
-
 
 </android.support.constraint.ConstraintLayout>
