@@ -9,7 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.ToolbarWidgetWrapper;
+//import android.support.v7.widget.ToolbarWidgetWrapper;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -19,7 +19,13 @@ import android.widget.ListView;
 import android.widget.TableLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.Toolbar;
+//import android.widget.Toolbar;
+import android.support.v7.widget.Toolbar;
+
+import android.os.Bundle;
+import android.support.v7.app.ActionBarDrawerToggle;
+//import android.support.v7.widget.Toolbar;
+import android.widget.Toast;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -81,14 +87,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //toolbar = (Toolbar) findViewById(R.id.action_bar);
+        toolbar = (Toolbar) findViewById(R.id.action_bar);
+        setSupportActionBar(toolbar);
         // Sets the Toolbar to act as the ActionBar for this Activity window.
         // Make sure the toolbar exists in the activity and is not null
+        //toolbar.inflateMenu(R.menu.menu,onCreateOptionsMenu(Menu menu));
 
+        //setSupportActionBar(ToolbarWidgetWrapper);
 
-        //    setSupportActionBar(ToolbarWidgetWrapper);
-
-
+        //setActionBar(toolbar);
         
     }
 
@@ -143,6 +150,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+       // toolbar = (Toolbar) findViewById(R.id.action_bar);
+        // Sets the Toolbar to act as the ActionBar for this Activity window.
+        // Make sure the toolbar exists in the activity and is not null
+//        toolbar.inflateMenu(R.menu.menu,menu);
+
+
         getMenuInflater().inflate(R.menu.menu,menu);
         return true;
         // return super.onCreateOptionsMenu(menu);
@@ -166,7 +179,6 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
 
 
 }

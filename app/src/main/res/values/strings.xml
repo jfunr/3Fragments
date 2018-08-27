@@ -15,6 +15,9 @@
 
     <string name="button_lista_mascotas">editar datos</string>
 
+    <string name="main_mascota">Main mascota</string>
+    <string name="lista_mascota">Lista mascota</string>
+
     <string name="rate">50</string>
 
     <string name="menu_contacto">Contacto</string>
